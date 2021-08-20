@@ -1,7 +1,7 @@
 /* L laptop RESOPNSIVE DESING 
   starts from  here */
 
-@media (min-width: 1440px) {
+@media only screen and (max-width: 1440px) {
   html {
     font-size: 73%;
   }

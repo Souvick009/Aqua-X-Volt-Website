@@ -1,7 +1,7 @@
 /* 4K RESOPNSIVE DESING 
   starts from  here */
 
-@media (min-width: 2560px) {
+@media only screen and (max-width: 2560px) {
     html {
         font-size: 112%;
     }
@@ -404,7 +404,7 @@
         background-color: transparent;
     }
     .move {
-        margin-left: 55rem;
+        margin-left: 60rem;
     }
     li {
         float: left;
@@ -537,7 +537,7 @@
         margin-left: 1%;
     }
     .off {
-        margin-right: 21%;
+        margin-right: -1%;
     }
     .button {
         display: flex;
