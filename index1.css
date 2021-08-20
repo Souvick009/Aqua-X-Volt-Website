@@ -395,7 +395,7 @@
       background-color: transparent;
     }
     .move  {
-      margin-left: 45rem;
+      margin-left: 53rem;
     }
     li {
       float: left;
@@ -527,10 +527,12 @@
       font-family: 'Potta One', cursive;
       font-size: 3rem;
       margin-top: 15rem;
-      margin-left: 5rem;
+      /* margin-left: 1%; */
+      text-align: center;
     }
     .off  {
-      margin-left: 25rem;
+      /* margin-left: 4%; */
+      text-align: center;
     }
     /* Tablet Landscape */
     @media screen and (max-width: 360px)  {
@@ -548,7 +550,7 @@
     @media (min-width:1100px) { body {font-size:1.5rem;} } 
     .button  {
       display: flex;
-      margin-left: 48rem;
+      margin-left: 52rem;
     }
     #none {
       opacity: .1;
@@ -572,12 +574,7 @@
         border-radius: 20px;
     }
     .footer {
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background-color: rgb(0, 0, 0);
-      color: white;
-      text-align: center;
+      margin-left: 5rem;
     }
     .hr1  {
       opacity: .2;
