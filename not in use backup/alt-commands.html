@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+    </style>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ab221b6bfe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="commands.css">
+    <script src="/pages/faq.js"></script>
+    <script src="/pages/commands.js"></script>
+    <title>Document</title>
+</head>
+
+<body class="dark" id="fetch">
+    <div class="header" id="Home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <a class="navbar-brand" href="/index.html">AQUA
+                            <h4 id="icon" class="fab fa-mixer"></h4>
+                            VOLT
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0" id="menu">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/index.html">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/pages/commands.html">
+                                        Commands
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/pages/about-us.html">
+                                        About-us
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/pages/faq.html">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li><a class="btn btn-outline-info" href="">Invite Me</a></li>
+                                <button class="nav-item mx-4" onclick="dropdown()">
+                                    <div class="nav-link active bg-dark">
+                                        <i class="far fa-lightbulb btn-1"></i>
+                                    </div>
+                                </button>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 py-5 text">
+                    <h3>COMMANDS</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="in-text box">
+                        <li class="loc all">
+                            <a href="commands.html">All</a>
+                        </li>
+                        <li class="loc mods" onclick="mod()">
+                            <a href="#">Moderation</a>
+                        </li>
+                        <li class="loc infos" onclick="info()">
+                            <a href="#">Info</a>
+                        </li>
+                        <li class="loc funs" onclick="fun()">
+                            <a href="#">Fun</a>
+                        </li>
+                        <li class="loc utils" onclick="util()">
+                            <a href="#">Utility</a>
+                        </li>
+                        <div class="col-lg-3 search">
+                            <div class="input-group rounded">
+                                <input id="searchbar" type="search" class="form-control rounded"
+                                    onkeyup="search_command()" placeholder="Search" aria-label="Search"
+                                    aria-describedby="search-addon" />
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section py-5 place">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-12 col-lg-12">
+                    <div class="col-lg-12">
+                        <div class="detail text-center">
+                            <div class="col-md-3">
+                                <h4 class="detail-1 detail-0">Command</h4>
+                            </div>
+                            <div class="col-md-3">
+                                <h4 class="detail-1 detail-2">Usage</h4>
+                            </div>
+                            <div class="col-md-3">
+                                <h4 class="detail-1 detail-3">Accessable by</h4>
+                            </div>
+                            <div class="col-md-3">
+                                <h4 class="detail-1 deatil-4">Description</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Addrole</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=addrole {user-mention} {role/role name}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Roles</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Adds a role to the user.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Removerole</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=removerole {user} {role}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Roles</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Removes a role from the user.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Ban</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b> =ban {user-mention/userid} [Reason] </b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Ban Members</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc"> bans a member from the server!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Clear</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=clear [count]</b> <i>(For deleting recent messages
+                                        present in
+                                        the channel)</i>
+                                    <b>=clear [count] [tag] </b><i>(For deleting messages of a specific user)</i>
+                                    <b>=clear [count] invites </b><i>(For deleting Discord Server's invite links
+                                        present
+                                        in the</i>
+                                    channel)
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manages Messages</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Delete messages at once!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Clearwarns</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=clearwarn {mention/userid}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Server</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Clear all warnings for a user at once.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Createrole</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=createrole [role name] {hex color code>}</b> (Note:- Hex
+                                    Color code is optional)</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Roles</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Create a Role In The Server</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Delwarn</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=delwarn {mention/userid} {Number of a warning}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Messages</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Delete a single warning for a member.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Kick</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b> =kick {user/userid} [reason]</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Kick Members</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc"> Kicks a member from the server!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Modlogs</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=modlogs</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Messages</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Shows current muted members and their remaining time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Mute</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b> =mute {user/userid} {limit} [reason]</b>(For Temporary
+                                    Mute)
+                                    <b>=mute {user} [reason]</b> (For Permanent Mute)
+                                    <b>=mute {user} {perm/permanent}</b> [reason] (For Permanent Mute Only For Slash
+                                    Commands)</b>
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Kick Members</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Mute a member so they cannot type or speak.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Setnickname</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=setnick {user} {new nickname}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Nicknames</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Change the nickname of a user</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Timeout</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=timeout {user/userid} {limit} [reason]</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Messages,<br>Timeout Members</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Mute a member so they cannot type or speak.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Unban</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=unban {userid}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Ban Members</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Unbans a member from the server!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Unmute</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=unmute {user}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Messages</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Unmute a member so they can type or speak.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Userlogs</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=mutes {mention/userid}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Messages</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Get mutes for a user.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Warn</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=warn {mention/userid} [Reason]</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Messages</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Warns a member</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 moderation">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Warnings</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=warnings {mention/userid}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Messages</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Get warnings for a user.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Info commands starts from here -->
+                    <div class="col-md-12 info">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Help</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>={command | alias}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Anyone</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Returns all commands, or one specific command info</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 info">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Info</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>={command | alias}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Anyone</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Returns info about AquaXVolt bot</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 info">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Invite</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=invite</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">everyone</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Provides invite link of the bot</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 info">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Ping</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=ping</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Messages</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Check ping of the bot</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 info">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Serverinfo</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=serverinfo</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Messages</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Show Useful Infomation About The Server.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 info">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Userinfo</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=userinfo {mention}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Messages</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Returns user information</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 fun">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Avatar</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>={command | alias} || {@user}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Messages</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Shows avatar of a user</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 fun">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Coinflip</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>={command | alias}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Anyone</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Simple Coinflip Game or You Can Call This Head or Tail Game</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 fun">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Dm</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=dm {user} {message}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Messages</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Dm a user!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 fun">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Rps</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>={command | alias}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Anyone</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Simple Rock Paper Scissors Game. React to one of the emojis to
+                                    play the game.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Utility commands starts from here -->
+                    <div class="col-md-12 utility">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Announce</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=announce everyone {#channel} {#colourcode} {message}</b> (For
+                                    everyone tagged embeded message)
+                                    <b>=announce here {#channel} {#colourcode} {message}</b> (For here tagged embeded
+                                    message)
+                                    <b>=announce image {#channel} {#colourcode} {imagelink message}</b> (For image
+                                    embeded image)
+                                    <b>=announce normal {#channel} {#colourcode} {message}</b> (For sending a normal
+                                    message)</b>
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Messages,<br> Mention Everyone</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Announce a message</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 utility">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Lock</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=lock {channel} {time}</b> (For locking any channel
+                                    temporarily)<br>
+                                    <b>=lock {channel} </b>(For locking any channel permanently)
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Channels</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Lock a channel.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 utility">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Settings</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=settings setprefix &&<br>
+                                        =settings errmsg on/off<br>
+                                        =settings ed {command}</b></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Server</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">This command is used to change configs for the bot in the
+                                    server.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 utility">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Slowmode</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=slowmode {time} [channel]</b><br>
+                                    <b>=slowmode {time}</b> (For current channel)<br>
+                                    <b>=slowmode {time} {channe} </b>(For another channel)
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Channels</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Sets slowmode in the channel</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 utility">
+                        <div class="head role">
+                            <div class="col-md-3">
+                                <h5 class="command name"><span style="margin-left: 5px;">Unlock</span></h5>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command use"><b>=unlock [channel]</b><br>
+                                    <b>=unlock {channel}</b> (For unlocking any channel)<br>
+                                    <b>=unlock</b> (For unlocking the current channel)
+                                </p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command access">Manage Channels</p>
+                            </div>
+                            <div class="col-md-3">
+                                <p class="command desc">Unlock a channel.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-lg-6 py-5 nice">
+                    <h5>About AxV</h5>
+                    <p class="about">Aqua X Volt is your handy moderation bot with all the features you would ever want
+                        in a
+                        moderation bot. It's focus is to make a moderator's life easier by making features that can be
+                        conveniently used by moderators.</p>
+                </div>
+                <div class="col-md-3 col-lg-6 py-5 nice text-center">
+                    <h5>Easy Navigation</h5>
+                    <ul>
+                        <li><a class="link" href="/index.html">Home</a></li>
+                        <li><a class="link" href="/pages/about-us.html">About-us</a></li>
+                        <li><a class="link" href="/pages/commands.html">Commands</a></li>
+                        <li><a class="link" href="/pages/faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-6 py-2 nicee text-center">
+                    <h5>Contact-us</h5>
+                    <div class="col-md-12">
+                        <a href="https://discord.gg/P3JzvxKdH6" target="_blank"><i class=" i fab fa-discord"></i></a>
+                        <a href="https://discord.gg/P3JzvxKdH6" target="_blank"><i class=" i fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-widget text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <h5 class="heading com">©2022</h5>
+                </div>
+                <div class="offset-lg-2 col-lg-6">
+                    <h5 class="heading2 com">Made by ~ <b><i><span
+                                    style="text-shadow: 2px 2px 16px rgba(255, 0, 119, 0.8);">
+                                    Team AxV with ❤️</span></i></b></h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

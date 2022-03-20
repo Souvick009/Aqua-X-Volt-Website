@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+    </style>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ab221b6bfe.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="changelogs.css">
+    <script src="changelog.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header" id="Home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                        <a class="navbar-brand" href="/index.html">AQUA
+                            <h4 id="icon" class="fab fa-mixer"></h4>
+                            VOLT
+                        </a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mb-2 mb-lg-0" id="menu">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/index.html">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/commands.html">
+                                        Commands
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/pages/about-us.html">
+                                        About-us
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="/pages/about-us.html">
+                                        Change-logs
+                                    </a>
+                                </li>
+                                <li><a class="btn btn-outline-info" href="">Invite Me</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 py-5 text">
+                    <h3>CHANGE-LOGS</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center text-white">
+                    <h1 class = "head" style="font-family: 'Roboto Condensed', sans-serif;">Update 3.4.1</h1>
+                    <h4>04 / 02 / 2022</h4>
+                    <hr style="border: 5px solid white;">
+                    <div class="show col-md-8 m-auto">
+                        <p><b><span style="font-size: 1.5rem;">📢 Bugs Fixed 📢</span></b><br>
+                            -----------------------------<br>
+                            <div class="m-auto">
+                            <span class="arrow">=></span> Fixed a bug where If an user has a custom avatar in a server, then the bot was sending a
+                            blank avatar embed when using Avatar command.<br>
+                            <span class="arrow">=></span> Lock and Unlock commands used to take the channel as the current channel even when a channel
+                            is mentioned.<br>
+                            <span class="arrow">=></span> Clear command would take the count of messages to delete randomly even when it was given.<br>
+                            <span class="arrow">=></span> Fixed a bug where moderators can timeout a member even when the member is timed out.<br>
+                            <span class="arrow">=></span> Fixed a bug where bot will not give a error message reply when timeout is tried to be
+                            given
+                            to someone who has his role higher than the bot in order.<br>
+                            <span class="arrow">=></span> Fixed some minor bugs.<br><br>
+                            </div>
+                            <b><span style="font-size: 1.5rem;">📢 Feature Updates 📢</span></b><br>
+                            ---------------------------------------<br>
+                            <span class="arrow">=></span> Added a <u>Banner</u> command which will show the banner of the user.<br>
+                            <span class="arrow">=></span> Serverinfo command will now also show the name of Server Boosters, Boost Tier, Server
+                            Banner
+                            .<br>
+                            <span class="arrow">=></span> Now if command Settings is used without any options then it will show all current
+                            settings
+                            for the bot for the user.<br>
+                            <span class="arrow">=></span> Added choices for the Settings command. (Slash Command)<br>
+                            <span class="arrow">=></span> Added choices for the Announce command. (Slash Command)<br>
+                            <span class="arrow">=></span> Serverinfo command will now support animated server icon.<br>
+                            <span class="arrow">=></span> From now on "Read Message History" will be a primary permission required for the bot in
+                            order
+                            to operate properly.<br>
+                        </p>
+                    </div>
+                    <div class="butn">
+                        <i class="fas fa-arrow-circle-down" onclick="dropdown()"></i>
+                    </div>
+                    <div class="butn-2">
+                        <i class="fas fa-arrow-circle-down" onclick="dropup()"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 py-5 text-2 text-white text-center">
+                    <h3>IT CAN HELP YOU 😏 </h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
