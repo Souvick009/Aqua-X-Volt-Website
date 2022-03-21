@@ -27,14 +27,20 @@ status = 404
 [[redirects]]
 from = "/not%20in%20use%20backup/*"
 to = "/error.html"
-status = 404
+status = 200
 
 [[redirects]]
 from = "/images/*"
 to = "/error.html"
-status = 404
+status = 200
 
 [[redirects]]
 from = "/bounce%bar%preloader/*"
 to = "/error.html"
-status = 404
+status = 200
+
+[[redirects]]
+from = "/pages/*"
+to = "/*"
+status = 200
+force = true
