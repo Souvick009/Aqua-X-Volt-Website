@@ -23,27 +23,3 @@ status = 404
 from = "/pages/*"
 to = "/error.html"
 status = 404
-
-[[redirects]]
-from = "/not%20in%20use%20backup/*"
-to = "/error.html"
-status = 200
-force = true
-
-[[redirects]]
-from = "/images/*"
-to = "/error.html"
-status = 200
-force = true
-
-[[redirects]]
-from = "/bounce%20bar%20preloader/*"
-to = "/error.html"
-status = 200
-force = true
-
-[[redirects]]
-from = "/pages/*"
-to = "/*"
-status = 200
-force = true
