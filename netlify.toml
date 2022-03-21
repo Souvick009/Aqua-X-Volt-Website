@@ -34,11 +34,13 @@ force = true
 from = "/images/*"
 to = "/error.html"
 status = 200
+force = true
 
 [[redirects]]
-from = "/bounce%bar%preloader/*"
+from = "/bounce%20bar%20preloader/*"
 to = "/error.html"
 status = 200
+force = true
 
 [[redirects]]
 from = "/pages/*"
