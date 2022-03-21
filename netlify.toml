@@ -7,7 +7,7 @@ status = 404
 
 #/invite.html           https://discord.com/api/oauth2/authorize?client_id=721460877005422634&permissions=1392039259222&scope=bot%20applications.commands
 [[redirects]]
-from = "https://aquaxvolt.online/invite.html"
+from = "https://aquaxvolt.netlify.com/*"
 to = "https://discord.com/api/oauth2/authorize?client_id=721460877005422634&permissions=1392039259222&scope=bot%20applications.commands"
 status = 301
 force = true
