@@ -12,6 +12,12 @@ to = "https://discord.com/api/oauth2/authorize?client_id=721460877005422634&perm
 status = 200
 force = true
 
+[[redirects]]
+from = "/pages/*"
+to = "/*"
+status = 200
+force = true
+
 # Role-based redirects do not have a “to” property.
 #/* /error.html 404
 [[redirects]]
