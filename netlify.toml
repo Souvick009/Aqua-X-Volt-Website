@@ -24,3 +24,8 @@ force = true
 from = "/*"
 to = "/error.html"
 status = 404
+
+[[redirects]]
+from = "/pages/*"
+to = "/error.html"
+status = 404
