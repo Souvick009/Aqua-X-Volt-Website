@@ -28,6 +28,7 @@ status = 404
 from = "/not%20in%20use%20backup/*"
 to = "/error.html"
 status = 200
+force = true
 
 [[redirects]]
 from = "/images/*"
