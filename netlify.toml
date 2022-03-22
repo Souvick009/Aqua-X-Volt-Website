@@ -1,5 +1,35 @@
 [[redirects]]
-from = "/css/about-us.css"
+from = "/css/*"
+to = "/error.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/css/*"
+to = "/error.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/js/*"
+to = "/error.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/not-in-use-backup/*"
+to = "/error.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/Bounce-Bar-Preloader/*"
+to = "/error.html"
+status = 200
+force = true
+
+[[redirects]]
+from = "/images/*"
 to = "/error.html"
 status = 200
 force = true
