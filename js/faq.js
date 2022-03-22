@@ -16,18 +16,25 @@ function dropdown() {
         element.classList.toggle("light");
     }
 
-    document.onmousedown = disableclick
-    var status = "Right Click Is Disabled";
-    function disableclick(e) {
-        if (e.button == 2) {
-            alert(status);
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+
+    document.onkeydown = function (e) {
+        if (e.key == 123) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.key == 'I'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.key == 'C'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.key == 'J'.charCodeAt(0)) {
+            return false;
+        }
+        if (e.ctrlKey && e.key == 'U'.charCodeAt(0)) {
             return false;
         }
     }
-
-    $(document).keydown(function (e) {
-        if (e.which === "F12") {
-            return false;
-        }
-    });
 }
