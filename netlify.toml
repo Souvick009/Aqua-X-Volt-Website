@@ -1,8 +1,8 @@
-# [[redirects]]
-# from = "/css/*"
-# to = "/error.html"
-# status = 200
-# force = true
+[[redirects]]
+from = "/css/*"
+to = "/error.html"
+status = 200
+force = true
 
 # [[redirects]]
 # from = "/js/*"
