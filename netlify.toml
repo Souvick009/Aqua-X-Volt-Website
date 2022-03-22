@@ -1,32 +1,32 @@
-[[redirects]]
-from = "/css/*"
-to = "/error.html"
-status = 200
-force = true
+# [[redirects]]
+# from = "/css/*"
+# to = "/error.html"
+# status = 200
+# force = true
 
-[[redirects]]
-from = "/js/*"
-to = "/error.html"
-status = 200
-force = true
+# [[redirects]]
+# from = "/js/*"
+# to = "/error.html"
+# status = 200
+# force = true
 
-[[redirects]]
-from = "/not-in-use-backup/*"
-to = "/error.html"
-status = 200
-force = true
+# [[redirects]]
+# from = "/not-in-use-backup/*"
+# to = "/error.html"
+# status = 200
+# force = true
 
-[[redirects]]
-from = "/Bounce-Bar-Preloader/*"
-to = "/error.html"
-status = 200
-force = true
+# [[redirects]]
+# from = "/Bounce-Bar-Preloader/*"
+# to = "/error.html"
+# status = 200
+# force = true
 
-[[redirects]]
-from = "/images/*"
-to = "/error.html"
-status = 200
-force = true
+# [[redirects]]
+# from = "/images/*"
+# to = "/error.html"
+# status = 200
+# force = true
 
 #/invite.html           https://discord.com/api/oauth2/authorize?client_id=721460877005422634&permissions=1392039259222&scope=bot%20applications.commands
 [[redirects]]
