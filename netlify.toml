@@ -1,3 +1,8 @@
+[[redirects]]
+from = "/css/about-us.css"
+to = "/error.html"
+status = 200
+force = true
 
 #/invite.html           https://discord.com/api/oauth2/authorize?client_id=721460877005422634&permissions=1392039259222&scope=bot%20applications.commands
 [[redirects]]
@@ -18,9 +23,3 @@ force = true
 from = "/*"
 to = "/error.html"
 status = 404
-
-[[redirects]]
-from = "/css/about-us.css"
-to = "/error.html"
-status = 200
-force = true
