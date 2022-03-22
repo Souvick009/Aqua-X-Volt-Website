@@ -1,0 +1,2 @@
+Deny from all
+ErrorDocument 404 "./error.html"
