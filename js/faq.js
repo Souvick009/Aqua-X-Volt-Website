@@ -21,7 +21,7 @@ function dropdown() {
     });
 
     document.onkeydown = function (e) {
-        console.log("working")
+        console.log(e.key)
         if (e.key == "F12") {
             console.log("working1")
             return false;
