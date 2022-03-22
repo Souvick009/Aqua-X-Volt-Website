@@ -13,6 +13,21 @@ function dropdown() {
             sun[i].style.display = "none"
             moon[i].style.display = "block"
         }
-    element.classList.toggle("light");
+        element.classList.toggle("light");
     }
+
+    document.onmousedown = disableclick
+    var status = "Right Click Is Disabled";
+    function disableclick(e) {
+        if (e.button == 2) {
+            alert(status);
+            return false;
+        }
+    }
+
+    $(document).keydown(function (e) {
+        if (e.which === "F12") {
+            return false;
+        }
+    });
 }

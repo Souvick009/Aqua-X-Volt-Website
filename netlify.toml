@@ -1,7 +1,7 @@
 [[redirects]]
 from = "/css/*"
 to = "/error.html"
-status = 301
+status = 200
 
 # [[redirects]]
 # from = "/js/*"
